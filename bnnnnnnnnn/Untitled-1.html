@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Usuário</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+   
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    
+    .header {
+      background-color: #333;
+      color: #e09696;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header__logo {
+      font-size: 1.5rem;
+    }
+
+    .header__nav {
+      display: flex;
+    }
+
+    .header__list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .header__item {
+      margin-left: 20px;
+    }
+
+    .header__link {
+      color: #e7b0b0;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    .header__link:hover {
+      background-color: #fffdfd;
+      border-radius: 5px;
+    }
+
+    
+    .profile {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f7f5f5;
+      border: 1px solid #ccc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .profile__avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      object-fit: cover; 
+    }
+
+    .profile__info {
+      margin-bottom: 20px;
+    }
+
+    .profile__title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .profile__bio {
+      font-size: 1.1rem;
+    }
+
+    .profile__subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .profile__friend-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .profile__friend {
+      margin-bottom: 5px;
+    }
+
+    
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer__copyright {
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__logo">Logo</div>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item"><a href="#" class="header__link">Página Inicial</a></li>
+        <li class="header__item"><a href="#" class="header__link">Perfil</a></li>
+        <li class="header__item"><a href="#" class="header__link">Configurações</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="profile">
+    <img src="images.jfif" alt="Foto de perfil" class="profile__avatar">
+    <section class="profile__info">
+      <h1 class="profile__title">@tralha-244</h1>
+      <p class="profile__bio">sc,floripa($-invejoso se morde-$)
+      </p>
+    </section>
+
+    <section class="profile__friends">
+      <h2 class="profile__subtitle">Amigos</h2>
+      <ul class="profile__friend-list">
+        <li class="profile__friend">@Pedro</li>
+        <li class="profile__friend">@Robinho</li>
+        <li class="profile__friend">@Ceciliarosalopes</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copyright">© fecebook. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
